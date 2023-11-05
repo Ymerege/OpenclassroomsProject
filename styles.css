@@ -1,0 +1,19 @@
+header {
+  background-color: rgb(204, 152, 73);
+  height: 50vh;
+}
+
+h1 {
+  color: rgb(71, 71, 173);
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  color: rgb(204, 152, 73);
+}
+
+form input, form textarea {
+  display: block;
+}/*# sourceMappingURL=styles.css.map */
