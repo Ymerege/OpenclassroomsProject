@@ -24,6 +24,15 @@ ul li {
   color: rgb(204, 152, 73);
 }
 
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+table th, table td, table caption {
+  border: 1px solid black;
+  padding: 15px;
+}
+
 form input, form textarea {
   display: block;
   margin-top: 10px;
@@ -32,13 +41,17 @@ form input, form textarea {
 
 .container {
   display: flex;
+  flex-direction: row-reverse;
 }
 .container .element.element1 {
   background-color: aqua;
+  width: 33%;
 }
 .container .element.element2 {
   background-color: beige;
+  width: 33%;
 }
 .container .element.element3 {
   background-color: chocolate;
+  width: 33%;
 }/*# sourceMappingURL=styles.css.map */
