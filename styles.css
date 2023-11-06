@@ -1,3 +1,8 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}
 header {
   background-color: rgb(204, 152, 73);
   height: 10vh;
@@ -23,4 +28,17 @@ form input, form textarea {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+}
+.container .element.element1 {
+  background-color: aqua;
+}
+.container .element.element2 {
+  background-color: beige;
+}
+.container .element.element3 {
+  background-color: chocolate;
 }/*# sourceMappingURL=styles.css.map */

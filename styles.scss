@@ -1,6 +1,10 @@
 $main-color : rgb(71, 71, 173);
 $secondary-color : rgb(204, 152, 73);
-
+@media screen and (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+    }
 header{
     background-color: $secondary-color;
     height:10vh;
@@ -23,5 +27,19 @@ form {
         display: block;
         margin-top:10px;
         margin-bottom:10px;
+    }
+}
+.container{
+    display:flex;
+    .element{
+        &.element1{
+            background-color: aqua;
+        }
+        &.element2{
+            background-color: beige;
+        }
+        &.element3{
+            background-color: chocolate;
+        }
     }
 }
