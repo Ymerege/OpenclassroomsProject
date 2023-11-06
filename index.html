@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1>Hello World !</h1>
+        <p>Bienvenue sur ce super site</p>
     </header>
     <nav>
         <ul>
@@ -29,53 +30,72 @@
     </nav>
     <main>
         <section>
+            <a href="#">Test lien</a>
             <form method="get" action="">
-                <label for="prenom">Votre Prénom</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Ex. Mathieu" size="30" maxlength="20"/>   
-                <label for="nom">Votre Nom</label>
-                <input type="text" name="nom" id="nom" placeholder="Ex. " size="30" maxlength="20"/>
-                <label for="telephone">Votre Téléphone</label>
-                <input type="tel" name="telephone" id="telephone" placeholder="Ex. 06" size="30" maxlength="20"/>
-                <p>Cochez les aliments que vous aimez :</p>
-                <input type="checkbox" name="pizzas" id="pizzas" aria-checked="true" /><label for="pizzas">Pizzas</label>
-                <input type="checkbox" name="frites" id="frites" /><label for="frites">Frites</label>
-                <p>De quel continent venez-vous ?</p>
-                <input type="radio" name="continent" id="afrique" /><label for="afrique">Afrique</label>
-                <input type="radio" name="continent" id="europe" /><label for="europe">Europe</label>
-                <textarea name="comment" size="50" maxlength="45"/></textarea>  
-                <label for="pays">Dans quel pays habitez vous ?</label>
-                <select name="pays" id="pays">
-                    <option value="espagne">Espagne</option>
-                    <option value="france">France</option>
-                    <option value="italie">Italie</option>
-                </select>
-                <label for="comment">Votre commentaire :</label>
-                <textarea name="comment" size="50" maxlength="45"/></textarea>
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <label for="prenom">Votre Prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex. Mathieu" size="30" maxlength="20"/>   
+                    <label for="nom">Votre Nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex. " size="30" maxlength="20"/>
+                    <label for="telephone">Votre Téléphone</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Ex. 06" size="30" maxlength="20"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre identité</legend>
+                    <p>De quel continent venez-vous ?</p>
+                    <input type="radio" name="continent" id="afrique" /><label for="afrique">Afrique</label>
+                    <input type="radio" name="continent" id="europe" /><label for="europe">Europe</label>
+                    <textarea name="comment" size="50" maxlength="45"/></textarea>  
+                    <label for="pays">Dans quel pays habitez vous ?</label>
+                    <select name="pays" id="pays">
+                        <option value="espagne">Espagne</option>
+                        <option value="france">France</option>
+                        <option value="italie">Italie</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <p>Cochez les aliments que vous aimez :</p>
+                    <input type="checkbox" name="pizzas" id="pizzas" aria-checked="true" /><label for="pizzas">Pizzas</label>
+                    <input type="checkbox" name="frites" id="frites" /><label for="frites">Frites</label>
+                    <label for="comment">Votre commentaire :</label>
+                    <textarea name="comment" size="50" maxlength="45"/></textarea>
+                </fieldset>
+                <input type="submit" value="Envoyer">
             </form>
+            
         </section>
         <aside>
             <div class="container">
                 <div class="element element1">Element 1</div>
                 <div class="element element2">Element 2</div>
                 <div class="element element3">Element 3</div>
+                <div class="element element4">Element 4</div>
+                <div class="element element5">Element 5</div>
+                <div class="element element6">Element 6</div>
             </div>
             <table>
                 <caption>Ceci est le titre de mon tableau</caption>
-                <tr>
-                    <th>titre 1</th>
-                    <th>titre 2</th>
-                    <th>titre 3</th>
-                </tr>
-                <tr>
-                    <td>colonne 1</td>
-                    <td>colonne 2</td>
-                    <td>colonne 3</td>
-                </tr>
-                <tr>
-                    <td>colonne 4</td>
-                    <td>colonne 5</td>
-                    <td>colonne 6</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>titre 1</th>
+                        <th>titre 2</th>
+                        <th>titre 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">colonne 1</td>
+                        <td>colonne 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>colonne 4</td>
+                        <td>colonne 5</td>
+                        <td>colonne 6</td>
+                    </tr>
+                </tfoot>
             </table>
         </aside>
     </main>
