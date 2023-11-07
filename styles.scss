@@ -1,3 +1,9 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
 $main-color : rgb(71, 71, 173);
 $secondary-color : rgb(194, 89, 71);
 $third-color : rgb(161, 33, 10);
