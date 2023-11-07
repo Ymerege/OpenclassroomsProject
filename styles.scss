@@ -17,6 +17,7 @@ $fourth-color : white;
     font-family: Arial, Helvetica, sans-serif;
 }
 *a{
+    text-decoration: none;
     &:hover{
         color:grey;
     }
@@ -65,35 +66,34 @@ form {
     }
 }
 .container{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
     justify-content: center;
     align-items:center;
     .element{
         &.element1{
             background-color: aqua;
-            width:33%;
+          
         }
         &.element2{
             background-color: beige;
-            width:33%;
+         
         }
         &.element3{
             background-color: chocolate;
-            width:33%;
+          
         }
         &.element4{
             background-color: aqua;
-            width:33%;
+          
         }
         &.element5{
             background-color: beige;
-            width:33%;
+         
         }
         &.element6{
             background-color: chocolate;
-            width:33%;
+         
         }
     }
 }

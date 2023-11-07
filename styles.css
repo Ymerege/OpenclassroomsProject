@@ -7,6 +7,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* a {
+  text-decoration: none;
+}
 * a:hover {
   color: grey;
 }
@@ -59,33 +62,26 @@ form fieldset legend {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   justify-content: center;
   align-items: center;
 }
 .container .element.element1 {
   background-color: aqua;
-  width: 33%;
 }
 .container .element.element2 {
   background-color: beige;
-  width: 33%;
 }
 .container .element.element3 {
   background-color: chocolate;
-  width: 33%;
 }
 .container .element.element4 {
   background-color: aqua;
-  width: 33%;
 }
 .container .element.element5 {
   background-color: beige;
-  width: 33%;
 }
 .container .element.element6 {
   background-color: chocolate;
-  width: 33%;
 }/*# sourceMappingURL=styles.css.map */
