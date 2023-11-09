@@ -63,25 +63,32 @@ form fieldset legend {
 
 .container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
   justify-content: center;
   align-items: center;
 }
 .container .element.element1 {
   background-color: aqua;
+  grid-column: 1/4;
 }
 .container .element.element2 {
   background-color: beige;
+  grid-column: 1/2;
 }
 .container .element.element3 {
   background-color: chocolate;
+  grid-column: 1/4;
 }
 .container .element.element4 {
   background-color: aqua;
+  grid-column: 1/4;
 }
 .container .element.element5 {
   background-color: beige;
+  grid-column: 1/4;
 }
 .container .element.element6 {
   background-color: chocolate;
+  grid-column: 1/4;
 }/*# sourceMappingURL=styles.css.map */

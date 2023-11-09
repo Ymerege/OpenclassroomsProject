@@ -67,32 +67,38 @@ form {
 }
 .container{
     display:grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:100px 100px 100px 100px 100px 100px;
     justify-content: center;
     align-items:center;
     .element{
         &.element1{
             background-color: aqua;
-          
+            grid-column: 1/4;
         }
         &.element2{
             background-color: beige;
+            grid-column: 1/2;
          
         }
         &.element3{
             background-color: chocolate;
+            grid-column: 1/4;
           
         }
         &.element4{
             background-color: aqua;
+            grid-column: 1/4;
           
         }
         &.element5{
             background-color: beige;
+            grid-column: 1/4;
          
         }
         &.element6{
             background-color: chocolate;
+            grid-column: 1/4;
          
         }
     }
