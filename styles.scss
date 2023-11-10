@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-  }
+}
 
 $main-color : rgb(71, 71, 173);
 $secondary-color : rgb(194, 89, 71);
@@ -14,14 +14,27 @@ $fourth-color : white;
     }
     input, textarea{
         width:100%;
-    
+        
     }
 }
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+ul.list{
+    a{
+        background-color: burlywood;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        &:hover{
+            background-color: cadetblue;
+        }
+    }
+}
 *a{
     text-decoration: none;
+    padding: 25px 30px;
+    display: block;
+    
     &:hover{
         color:grey;
     }
@@ -89,27 +102,27 @@ form {
         &.element2{
             background-color: beige;
             grid-column: 1/2;
-         
+            
         }
         &.element3{
             background-color: chocolate;
             grid-column: 1/4;
-          
+            
         }
         &.element4{
             background-color: aqua;
             grid-column: 1/4;
-          
+            
         }
         &.element5{
             background-color: beige;
             grid-column: 1/4;
-         
+            
         }
         &.element6{
             background-color: chocolate;
             grid-column: 1/4;
-         
+            
         }
     }
 }
